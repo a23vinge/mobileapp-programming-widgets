@@ -30,6 +30,10 @@
         android:layout_height="wrap_content"
         android:text="GRAGAS AHHHH" />
 
-
+    <EditText
+        android:id="@+id/myNewEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tomten" />
 
 </LinearLayout>
