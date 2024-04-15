@@ -50,10 +50,10 @@ under knappen och imagen.
           <EditText /  <Button /  <ImageView
         android:layout_marginLeft="48dp"
 ```
+ 
 
 
-
-![](Screenshot_20240415_140044.png)
+![](Screenshot_20240415_140044.png)  
 
 Läs gärna:
 
