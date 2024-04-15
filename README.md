@@ -1,39 +1,59 @@
 
 # Rapport
 
-**Skriv din rapport här!**
 
-_Du kan ta bort all text som finns sedan tidigare_.
-
-## Följande grundsyn gäller dugga-svar:
-
-- Ett kortfattat svar är att föredra. Svar som är längre än en sida text (skärmdumpar och programkod exkluderat) är onödigt långt.
-- Svaret skall ha minst en snutt programkod.
-- Svaret skall inkludera en kort övergripande förklarande text som redogör för vad respektive snutt programkod gör eller som svarar på annan teorifråga.
-- Svaret skall ha minst en skärmdump. Skärmdumpar skall illustrera exekvering av relevant programkod. Eventuell text i skärmdumpar måste vara läsbar.
-- I de fall detta efterfrågas, dela upp delar av ditt svar i för- och nackdelar. Dina för- respektive nackdelar skall vara i form av punktlistor med kortare stycken (3-4 meningar).
 
 Programkod ska se ut som exemplet nedan. Koden måste vara korrekt indenterad då den blir lättare att läsa vilket gör det lättare att hitta syntaktiska fel.
 
-```
-function errorCallback(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            // Geolocation API stöds inte, gör något
-            break;
-        case error.POSITION_UNAVAILABLE:
-            // Misslyckat positionsanrop, gör något
-            break;
-        case error.UNKNOWN_ERROR:
-            // Okänt fel, gör något
-            break;
-    }
-}
+
+Jag skapade en LinearLayout 
+1. adderade imageview för att ska en bild på appen och sedan ändrade jag positionen på den till mitten för att det skulle se
+   bättre ut. Jag adderade image med hjälp av activity main där man kan justera imagen och desamma med text och knappen. 
+
+2. adderade button för att skapa en knapp på appen där det står GRAGAS AHHHH, inget händer om man trycker på den. Jag även ändrade positionen
+på knappen till mitten för att den skulle vara positionerad med imagen.
+
+3. addera edittext för att placera en text på appen för att skapa en box där man kan skriva saker och ting. Jag placerade också den i mitten
+under knappen och imagen. 
+
+4. Adderade margin på alla element där det är margin left 48 för att få de att röra sig mott vänster. 
 ```
 
-Bilder läggs i samma mapp som markdown-filen.
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:contentDescription="his logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-![](android.png)
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/myNewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GRAGAS AHHHH" />
+
+    <EditText
+        android:id="@+id/myNewEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tomten" />
+        
+          <EditText /  <Button /  <ImageView
+        android:layout_marginLeft="48dp"
+```
+
+
+
+![](Screenshot_20240411_155923.png)
 
 Läs gärna:
 
